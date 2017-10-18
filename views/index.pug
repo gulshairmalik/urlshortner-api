@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset='utf-8')
+        title Url-Shortner
+        link(href='/css/bootstrap.min.css', rel='stylesheet')
+    body
+        .container
+            .jumbotron
+                h1.text-center Url-Shortner Service
+            h2.text-info Url-Shortner:
+            p(style="font-size:18px;") This is a simple url-shortner API, developed in Express.Js.
+            h2.text-info API Link:
+            a(href="https://url-shortner55.herokuapp.com/short/?url=https://www.google.com",style="font-size:18px;",target="_blank") https://url-shortner55.herokuapp.com/short/?url=yourLink 
+            h2.text-info How to use this API:
+            p(style="font-size:18px;") Use of this API is very simple, only you have to provide a valid http/https link which you want to make short and it will return a JSON data with your original and shortned url.
+            p(style="font-size:18px") For example, if you provide a link such as:<br><code>https://url-shortner55.herokuapp.com/short/?url=https://www.google.com</code><br><br>It will return JSON data like <code>{"orignal_url":"....","shortned_url":"...."}</code>
+            br
+            br
+            center
+                img(src="/images/g.jpg",class="img img-responsive img-circle",style="width:50px;height:50px;")
+                a(href="https://github.com/gulshairmalik",target="_blank",class="text-center",style="font-size:18px;text-decoration:none;") Gulshair Malik
