@@ -29,7 +29,7 @@ app.get('/short/',function(req,res){
             urls.insert({url:url,urlcode:urlCode});
             results = {
                 original_url:url,
-                shortened_url:"/"+urlCode
+                shortened_url:"https://url-shortner55.herokuapp.com/"+urlCode
             }
         }
         else{
